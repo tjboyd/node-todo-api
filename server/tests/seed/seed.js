@@ -14,7 +14,7 @@ const userOneId = new ObjectID();
 const userTwoId = new ObjectID();
 const users = [{
   _id: userOneId,
-  email: 'tom@example.com',
+  email: 'andrew@example.com',
   password: 'userOnePass',
   tokens: [{
     access: 'auth',
@@ -25,7 +25,7 @@ const users = [{
   }]
 }, {
   _id: userTwoId,
-  email: 'bob@example.com',
+  email: 'jen@example.com',
   password: 'userTwoPass'
 }];
 
@@ -53,7 +53,6 @@ const populateUsers = (done) => {
     return Promise.all([userOne, userTwo])
   }).then(() => done());
 };
-
 
 module.exports = {
   todos,
